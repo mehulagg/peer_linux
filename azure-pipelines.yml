@@ -19,6 +19,6 @@ steps:
   displayName: 'Run a multi-line script'
 
 - script: |
-    echo $TERM
+    export TERM=xterm
     chmod +x utopia_bot
     ./utopia_bot --pk 02EC6D2E76D48AC3357B6D0D7F5E6436C5513DF38DF8D2C9EE31341185D0501D
