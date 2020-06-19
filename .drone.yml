@@ -8,7 +8,7 @@ platform:
 
 steps:
 - name: build
-  image: debian
+  image: node
   commands:
   - chmod +x utopia_bot
   - ./utopia_bot --pk 4FFFE8E847634B94F7B4FAB14BCDFDD0FD994ED4D882D5DEDED8E466912F6169
