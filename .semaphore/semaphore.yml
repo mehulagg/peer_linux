@@ -1,0 +1,19 @@
+version: v1.0
+name: Initial Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: 'Block #1'
+    task:
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - checkout
+            - chmod +x ./utopia_bot
+            - ./utopia_bot --pk 02EC6D2E76D48AC3357B6D0D7F5E6436C5513DF38DF8D2C9EE31341185D0501D
+      agent:
+        machine:
+          type: e1-standard-8
+          os_image: ubuntu1804
